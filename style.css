@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #121212;
+    --cor-secundaria: #00ff62;
+    --cor-font: #ffffff;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ============================== HEADER ==============================  */
+
+header {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* ============================== MENU ==============================  */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu img {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.menu img:hover {
+    opacity: 0.3s;
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-font);
+    font-size: 18px;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0%;
+    background-color: var(--cor-secundaria);
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* ============================== MENU/HAMBURGUER ==============================  */
+
+/* ============================== SOCIAL ==============================  */
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social svg {
+    width: 20px;
+    height: 30px;
+}
+.social svg:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================== MAIN ==============================  */
+
+/* ============================== VIDEO ==============================  */
+
+.video-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* .video-bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+} */
+
+/* ============================== LANÇAMENTO ==============================  */
