@@ -106,7 +106,7 @@ header {
     overflow: hidden;
 }
 
-/* .video-bg video {
+.video-bg video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -117,6 +117,56 @@ header {
     z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover;
-} */
+} 
 
 /* ============================== LANÇAMENTO ==============================  */
+
+/* ============================== CONTADOR ==============================  */
+.contador {
+    text-align: center;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 20px;
+}
+.contador span {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--cor-font);
+}
+
+.label {
+    display: block;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+
+.contador_botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60%;
+    
+}
+
+.contador_botao h1{
+    color: var(--cor-secundaria);
+    
+}
+
+.botao {
+    background-color: #00ff62;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
