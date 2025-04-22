@@ -4,3 +4,7 @@ Pagina que leva o usuário a informação do lançamento do game com um contador
 
 
 [Teste em tempo real](https://metal-gear-delta.vercel.app/)
+
+
+
+![imagem](icon/pagSnake.gif)
